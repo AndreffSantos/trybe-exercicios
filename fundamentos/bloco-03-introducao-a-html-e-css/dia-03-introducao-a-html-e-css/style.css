@@ -1,23 +1,36 @@
-div:hover{
-    border: solid 1px black;
+ol {
+    background-color: yellow;
 }
 
-:nth-child(3){
-    color: rgb(255, 255, 0);
+ol li:nth-child(2n){
+    color: green;
 }
 
-:nth-child(4){
-    color: rgb(0, 255, 0);
+ol li:nth-child(2n+1){
+    text-transform: uppercase;
 }
 
-:nth-child(5){
-    color: rgb(200 , 0, 255);
+h1, h2, h3 {
+    color: red;
 }
 
-:nth-child(6){
-    color: rgb(0, 13, 56);
+h1 em {
+    font-size: 40px;
+    border: solid black 1px;
 }
 
-:nth-child(7){
-    color: rgb(200, 200, 200);
+li {
+    font-size: 20px;
+}
+li em {
+    font-weight: bold;
+}
+
+ul.lang-program li:nth-child(-n+3) {
+    color: blue;
+}
+/* Não descobri seletor para estilizar com base no que tem na detro da tag. */
+
+ul li a.trybe:hover {
+    color: green;
 }
