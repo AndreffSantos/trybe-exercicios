@@ -1,15 +1,23 @@
-h1, p{
-    text-align: center;
+div:hover{
+    border: solid 1px black;
 }
 
-ol:hover{
-    background-color: powderblue;
+:nth-child(3){
+    color: rgb(255, 255, 0);
 }
 
-a:active{
-    color: yellow;
+:nth-child(4){
+    color: rgb(0, 255, 0);
 }
 
-ol, ul {
-    list-style: none;
+:nth-child(5){
+    color: rgb(200 , 0, 255);
+}
+
+:nth-child(6){
+    color: rgb(0, 13, 56);
+}
+
+:nth-child(7){
+    color: rgb(200, 200, 200);
 }
