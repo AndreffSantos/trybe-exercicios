@@ -1,0 +1,19 @@
+body {
+    background-color: rgb(227, 242, 253);
+}
+
+header {
+    text-align: center;
+    border-radius: 50px;
+    background-color: rgb(3, 4, 94);
+}
+
+#navigation ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+#navigation ul li a {
+    text-decoration: none;
+    color: salmon;
+}
