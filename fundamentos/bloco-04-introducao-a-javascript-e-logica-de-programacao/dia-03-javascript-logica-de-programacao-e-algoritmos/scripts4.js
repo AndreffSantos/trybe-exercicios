@@ -7,8 +7,7 @@ for(let indexLinha = 1; indexLinha <= n; indexLinha += 1){
         for(let index3 = 1; index3 <= indexLinha; index3 += 1){
             textoDaLinha += '*';
         }
-     
+        console.log(textoDaLinha);
+        textoDaLinha = '';
     }
-    console.log(textoDaLinha);
-    textoDaLinha = '';
 }
