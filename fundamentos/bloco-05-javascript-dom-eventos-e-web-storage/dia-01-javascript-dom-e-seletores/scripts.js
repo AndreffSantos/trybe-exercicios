@@ -15,9 +15,9 @@ function mudarTextoParagrafo(positionTag, novoTexto) {
     paragrafo[positionTag].innerText = novoTexto;
 }
 
-function mudarCorAmarelo() {
+function mudaCorAmarelo() {
     let elemento = document.getElementsByClassName('main-content');
-    elemento[0].style.backgrounColor = 'rgb(76,164,109)';
+    elemento[0].style.backgroundColor = 'rgb(76,164,109)';
 }
 
 function mudaCorVermelho() {
@@ -33,6 +33,7 @@ function ajeitaH1() {
 function paragrafoUppercase() {
     let elemento = document.getElementsByTagName('p');
     for (let index = 0; index < elemento.length; index += 1) {
-        elemento[index].style['text-transform'] = 'uppercase';
+        elemento[index].style.textTansform = 'uppercase';
+        console.log(elemento[index].innerHTML);
     }
 }
