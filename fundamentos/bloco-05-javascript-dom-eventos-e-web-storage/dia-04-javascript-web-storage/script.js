@@ -6,7 +6,8 @@ window.onload = function() {
         lineHeight: '15px',
         fontFamily: 'Arial',
     };
-    if (typeof(Storage) == 'undefined') {
+
+    if (typeof(Storage) ===  'undefined' || localStorage.length === 0) {
         for (let index in padrao) {
             localStorage.setItem(index, padrao[index]);
         }
@@ -19,27 +20,13 @@ window.onload = function() {
     document.body.style.fontFamily = localStorage.fontFamily;
 
     function mudaCorBackground() {
-        if (document.body.style.backgroundColor === padrao.backgroundColor) {
-            document.body.style.backgroundColor = 'red';
-            localStorage.backgroundColor = 'red';
-            buttonBackgroudColorRed.innerText = 'Branco';
-        } else {
-            document.body.style.backgroundColor = padrao.backgroundColor;
-            localStorage.backgroundColor = padrao.backgroundColor;
-            buttonBackgroudColorRed.innerText = 'Vermelho';
-        }
+        document.body.style.backgroundColor = document.querySelector('#input-color').value;
+        localStorage.backgroundColor = document.querySelector('#input-color').value;
     }
 
     function mudaCorTexto() {
-        if (document.body.style.color === padrao.colorText) {
-            document.body.style.color = 'rgb(255, 0, 255)';
-            localStorage.colorText = 'rgb(255, 0, 255)';
-            buttonColorText.innerText = 'Padrão';
-        } else {
-            document.body.style.color = padrao.colorText;
-            localStorage.colorText = padrao.colorText;
-            buttonColorText.innerText = 'Fúcsia';
-        }
+        document.body.style.color = document.querySelector('#input-color-text').value;
+        localStorage.colorText = document.querySelector('#input-color-text').value;
     }
     
     function mudaTamanhoDaFonte() {
