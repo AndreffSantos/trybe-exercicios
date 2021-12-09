@@ -1,0 +1,13 @@
+.center {
+    text-align: center;
+}
+
+#buttons-conteiner {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#buttons-conteiner div {
+    margin-right: 25px;
+}
