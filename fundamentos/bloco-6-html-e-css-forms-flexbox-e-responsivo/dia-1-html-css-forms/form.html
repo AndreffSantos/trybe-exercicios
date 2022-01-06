@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form action="" method="get">
+    <fieldset>
+      <legend>Dados Pessoais</legend>
+      <div>
+        <label for="nome">Nome</label>
+        <input id="nome" type="text" name="Nome" maxlength="40" required>
+      </div>
+  
+      <div>
+        <label for="email">E-mail</label>
+        <input id="email" type="email" name="Email" maxlength="50" required>
+      </div>
+  
+      <div>
+        <label for="cpf">CPF</label>
+        <input id="cpf" type="text" name="CPF" maxlength="11" required>
+      </div>
+  
+      <div>
+        <label for="endereco">Endereço</label>
+        <input id="endereco" type="text" name="Endereco" maxlength="200" required>
+      </div>
+  
+      <div>
+        <label for="cidade">Cidade</label>
+        <input id="cidade" type="text" name="Cidade" maxlength="28" required>
+      </div>
+  
+      <div>
+        <label for="estado">Estado</label>
+        <select name="Estado" id="estado"></select>
+      </div>
+  
+      <div>
+        <input type="radio" name="residencia" id="casa" value="Casa">
+        <label for="casa">Casa</label>
+        <input type="radio" name="residencia" id="apartamento" value="Apartamento">
+        <label for="apartamento">Apartamento</label>
+      </div>
+    </fieldset>
+  
+    <fieldset>
+      <legend>Dados do seu último emprego.</legend>
+      <div>
+        <p>Resumo do currículo</p>
+        <textarea name="curriculo" id="resumo" cols="30" rows="5" maxlength="1000" required></textarea>
+      </div>
+      <div>
+        <label for="cargo">Cargo</label>
+        <input type="text" name="cargo" id="cargo" maxlength="40" required>
+      </div>
+      <div>
+        <label for="desc">Descrição do Cargo</label>
+        <input type="text" name="descricao" id="desc" maxlength="500" required>
+      </div>
+      <div>
+        <label for="date">Data de inicio</label>
+        <input type="text" name="data" pattern="(([0-2][0-9]|[3][0-1])(/)([0][0-9]|[0-1][0-2])(/)(\d{4}))" placeholder="DD/MM/AAAA" required>
+      </div>
+    </fieldset>
+    <div>
+      <button type="submit">Enviar</button>
+    </div>
+  
+  </form>
+  <script src="script.js"></script>
+</body>
+</html>
