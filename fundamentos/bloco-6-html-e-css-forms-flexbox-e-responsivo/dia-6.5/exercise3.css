@@ -79,6 +79,37 @@ body {
   height: 1%;
 }
 
+@media (max-width: 240px) {
+  #header {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  #header h1 {
+    font-size: large;
+  }
+
+  #navigation ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+
+  #content {
+    width: 100%;
+    margin: 0;
+  }
+
+  img {
+    width: 80%;
+  }
+
+  #aside {
+    visibility: hidden;
+  }
+}
+
 @media print {
   #header, #navigation, #footer {
     visibility: hidden;
