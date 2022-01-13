@@ -1,9 +1,11 @@
 const fatorial = (n) => {
-  let aux = 1;
-  for (let index = 1; index <= n ; index += 1) {
-    aux = aux * index;
-  }
-  return aux;
+  // if (n === 0) {
+  //   return 1;
+  // } else {
+  //   return n * fatorial(n - 1)
+  // }
+
+  return (n === 0 ? 1 : n * fatorial(n - 1));
 }
 
-console.log(fatorial(1));
+console.log(fatorial(0));
