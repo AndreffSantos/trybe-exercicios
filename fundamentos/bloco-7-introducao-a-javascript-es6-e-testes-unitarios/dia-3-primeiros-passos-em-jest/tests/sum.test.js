@@ -1,5 +1,5 @@
 const { describe, it, expect } = require('@jest/globals');
-const sum = require('./sum');
+const sum = require('../sum');
 
 describe('testa a função sum: ', () => {
   it('Testa se sum(4, 5) reetorna 9', () => {

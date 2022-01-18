@@ -1,5 +1,5 @@
 const { describe, it, expect } = require('@jest/globals');
-const myFizzBuzz = require('./myFizzBuzz');
+const myFizzBuzz = require('../myFizzBuzz');
 
 describe('testando a função myFizzBuzz', () => {
   it('teste', () => {

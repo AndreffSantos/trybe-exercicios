@@ -1,5 +1,5 @@
 const { describe, it, expect } = require('@jest/globals');
-const myRemove = require('./myRemove');
+const myRemove = require('../myRemove');
 
 describe('testa a função myRemove', () => {
   it('testa o rotorno de myRemove([1, 2, 3, 4], 3)', () => {
