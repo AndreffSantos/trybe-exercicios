@@ -6,7 +6,8 @@ const expectedResult = 'O Senhor dos Anéis';
 
 function authorWith3DotsOnName(lista) {
   // escreva seu código aqui
-  const bookName = lista.filter( (book) => book.author.name.match(/^[a-z]\. [a-z]\. [a-z]\./i) !== null);
-  bookName.forEach( (element) => console.log(element.name));
+  const Arg = /^[a-z]\. [a-z]\. [a-z]\. /i;
+  const nameBook = lista.filter( (book) => book.author.name.match(Arg) !== null);
+  nameBook.forEach( (element) => console.log(element.name));
 }
 authorWith3DotsOnName(books);
